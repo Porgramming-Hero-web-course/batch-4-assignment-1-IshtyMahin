@@ -1,5 +1,5 @@
 {
-  const countWordOccurrences = (str1: string, str2: string):void => {
+  const countWordOccurrences = (str1: string, str2: string): number => {
     const sentenceArray = str1.split(" ");
 
     let cnt = 0;
@@ -17,8 +17,15 @@
       }
     }
 
-    console.log(cnt);
+    // console.log(cnt);
+    return cnt;
   };
 
   countWordOccurrences("TypeScript is great. I love TypeScript!", "typescript");
+  console.log(
+    countWordOccurrences(
+      "TypeScript is great. I love TypeScript!",
+      "typescript"
+    )
+  );
 }
