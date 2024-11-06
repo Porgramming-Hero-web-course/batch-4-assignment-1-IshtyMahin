@@ -1,6 +1,6 @@
 {
   type arr = Array<number>;
-  const sumArray = (array: arr) => {
+  const sumArray = (array: arr):void => {
     let total = array.reduce((sum, num) => sum + num, 0);
     console.log(total);
   };

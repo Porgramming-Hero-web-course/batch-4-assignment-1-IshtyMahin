@@ -1,6 +1,6 @@
 {
   type arr = Array<number>;
-  const removeDuplicates = (array: arr) => {
+  const removeDuplicates = (array: arr):void => {
     let uniqueArray: arr = [];
 
     for (let num of array) {

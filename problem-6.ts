@@ -9,7 +9,7 @@
     [key in X]: User[key];
   };
 
-  const updateProfile = <X extends keyof User>(profile: User, obj: Obj<X>) => {
+  const updateProfile = <X extends keyof User>(profile: User, obj: Obj<X>):User => {
     let newProfile = { ...profile, ...obj };
     return newProfile;
   };

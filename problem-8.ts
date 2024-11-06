@@ -23,7 +23,7 @@
   type Obj<X = any> = {
     [key: string]: X;
   };
-  const validateKeys = (obj: Obj, keys: string[]) => {
+  const validateKeys = (obj: Obj, keys: string[]):boolean => {
     return keys.every((k) => k in obj);
   };
   const person = { name: "Alice", age: 25, email: "alice@example.com" };

@@ -1,5 +1,5 @@
 {
-  const countWordOccurrences = (str1: string, str2: string) => {
+  const countWordOccurrences = (str1: string, str2: string):void => {
     const sentenceArray = str1.split(" ");
 
     let cnt = 0;
